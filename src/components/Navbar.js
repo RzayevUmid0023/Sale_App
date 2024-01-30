@@ -1,0 +1,73 @@
+import { StyleSheet, Text, View , Pressable } from 'react-native'
+import React from 'react'
+import {   Entypo ,MaterialIcons , Feather ,SimpleLineIcons , Ionicons   } from '@expo/vector-icons'
+
+
+const Navbar = () => {
+  return (
+    <View style={styles.container}>
+
+        <View style={styles.IconBox}>
+            <Pressable style={styles.s} >
+            <Entypo name="home" size={24} color="black" />
+            </Pressable>
+            <Text>Home</Text>
+        </View>
+
+        <View style={styles.IconBox}>
+            <Pressable style={styles.s} >
+            <Ionicons name="book-outline" size={24} color="black" />
+            </Pressable>
+            <Text>Home</Text>
+        </View>
+
+        
+
+        <View style={styles.IconBox}>
+            <Pressable style={styles.s} >
+                <MaterialIcons name="favorite-border" size={24} color="black" />    
+            </Pressable>
+            <Text>Favorites</Text>
+        </View>
+
+        <View style={styles.IconBox}>
+            <Pressable  style={styles.s} >
+            <Feather name="user" size={24} color="black" />
+            </Pressable>
+            <Text>User</Text>
+        </View>
+
+        <View style={styles.IconBox}>
+            <Pressable style={styles.s} >
+            <SimpleLineIcons name="basket" size={24} color="black" />
+            </Pressable>
+            <Text>Home</Text>
+        </View>
+    </View>
+  )
+}
+
+export default Navbar
+
+const styles = StyleSheet.create({
+
+    container:{
+        position:'absolute',
+        width:'100%',
+        height:70,
+        bottom:0,
+        display:'flex',
+        alignItems:'center',
+        justifyContent:'space-between',
+        flexDirection:'row',
+        backgroundColor:'#fcfcfc',
+        borderTopRightRadius:30,
+        borderTopLeftRadius:30,
+    },
+    IconBox:{
+        display:'flex',
+        alignItems:'center',
+        padding:20,
+    },
+    
+})
