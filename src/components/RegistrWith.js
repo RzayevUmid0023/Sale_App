@@ -3,7 +3,7 @@ import React from 'react'
 import { Apple , Facebook ,Google } from '../../assets/Image'
 
 
-const RegistrWith = ({navigation ,bottomText , LinkText}) => {
+const RegistrWith = ({ bottomText , LinkText}) => {
   return (
     <View  >
         <View style={styles.Footer}>

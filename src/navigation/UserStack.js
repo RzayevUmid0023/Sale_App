@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import { HomePage } from '../screen/index';
+import { HomePage , MenuPage } from '../screen/index';
 
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
@@ -12,6 +12,8 @@ const UserStack = () => {
         screenOptions={{headerShown: false}}>
 
         <Stack.Screen name='Home' component={HomePage} />
+        <Stack.Screen name='Menu' component={MenuPage} />
+
 
     </Stack.Navigator>
   )
